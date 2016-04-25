@@ -1,0 +1,6 @@
+[submodule "core-classes/Taxonomy_Core"]
+	path = core-classes/Taxonomy_Core
+	url = https://github.com/WebDevStudios/Taxonomy_Core.git
+[submodule "core-classes/CPT_Core"]
+	path = core-classes/CPT_Core
+	url = https://github.com/WebDevStudios/CPT_Core.git
