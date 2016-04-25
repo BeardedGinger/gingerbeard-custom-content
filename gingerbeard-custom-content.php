@@ -18,3 +18,17 @@ require_once( plugin_dir_path( __FILE__ ) . 'core-classes/CPT_Core/CPT_Core.php'
 
 // Load Taxonomy Helper
 require_once( plugin_dir_path( __FILE__ ) . 'core-classes/Taxonomy_Core/Taxonomy_Core.php' );
+
+// Register Plugins CPT
+register_via_cpt_core(
+	array(
+		'GB Plugin',
+		'GB Plugins',
+		'gb-plugins'
+	),
+	array(
+		'menu_icon' => 'dashicons-admin-plugins',
+		'publicly_queryable' => true,
+		'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' )
+	)
+);
