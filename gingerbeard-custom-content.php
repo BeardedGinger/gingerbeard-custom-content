@@ -32,3 +32,17 @@ register_via_cpt_core(
 		'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' )
 	)
 );
+
+// Register Testimonials CPT
+register_via_cpt_core(
+	array(
+		'Testimonial',
+		'Testimonials',
+		'testimonials'
+	),
+	array(
+		'menu_icon' => 'dashicons-format-quote',
+		'publicly_queryable' => false,
+		'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' )
+	)
+);
