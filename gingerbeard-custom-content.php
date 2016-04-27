@@ -22,14 +22,16 @@ require_once( plugin_dir_path( __FILE__ ) . 'core-classes/Taxonomy_Core/Taxonomy
 // Register Plugins CPT
 register_via_cpt_core(
 	array(
-		'GB Plugin',
+		'Plugin',
 		'GB Plugins',
 		'gb-plugins'
 	),
 	array(
-		'menu_icon' => 'dashicons-admin-plugins',
-		'publicly_queryable' => true,
-		'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' )
+		'menu_icon' 			=> 'dashicons-admin-plugins',
+		'publicly_queryable' 	=> true,
+		'rewrite' 			=> array( 'slug' => 'plugins' ),
+		'hierarchical' 			=> true,
+		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes' )
 	)
 );
 
