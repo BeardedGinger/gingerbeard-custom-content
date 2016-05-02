@@ -79,3 +79,18 @@ register_via_cpt_core(
 		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions' )
 	)
 );
+
+// Plugins Taxonomy
+register_via_taxonomy_core(
+	array(
+		'Plugin',
+		'Plugins',
+		'gb_plugin'
+	),
+	array(),
+	array(
+		'gb-plugins',
+		'gb-features',
+		'gb-documentation'
+	)
+);
