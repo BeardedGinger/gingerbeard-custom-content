@@ -64,3 +64,18 @@ register_via_cpt_core(
 		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes' )
 	)
 );
+
+// Register Documentation CPT
+register_via_cpt_core(
+	array(
+		'Documentation',
+		'Documentation',
+		'gb-documentation'
+	),
+	array(
+		'menu_icon' 			=> 'dashicons-editor-ul',
+		'publicly_queryable' 	=> true,
+		'rewrite' 				=> array( 'slug' => 'documentation' ),
+		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions' )
+	)
+);
