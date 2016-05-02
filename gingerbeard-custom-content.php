@@ -48,3 +48,19 @@ register_via_cpt_core(
 		'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' )
 	)
 );
+
+// Register Features CPT
+register_via_cpt_core(
+	array(
+		'Feature',
+		'Features',
+		'gb-features'
+	),
+	array(
+		'menu_icon' 			=> 'dashicons-editor-ul',
+		'publicly_queryable' 	=> true,
+		'rewrite' 				=> array( 'slug' => 'features' ),
+		'hierarchical' 			=> true,
+		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes' )
+	)
+);
