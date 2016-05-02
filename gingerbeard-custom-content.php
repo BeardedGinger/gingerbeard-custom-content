@@ -91,6 +91,7 @@ register_via_taxonomy_core(
 	array(
 		'gb-plugins',
 		'gb-features',
-		'gb-documentation'
+		'gb-documentation',
+		'post'
 	)
 );
