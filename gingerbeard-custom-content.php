@@ -73,7 +73,7 @@ register_via_cpt_core(
 		'gb-documentation'
 	),
 	array(
-		'menu_icon' 			=> 'dashicons-editor-ul',
+		'menu_icon' 			=> 'dashicons-media-text',
 		'publicly_queryable' 	=> true,
 		'rewrite' 				=> array( 'slug' => 'documentation' ),
 		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions' )
