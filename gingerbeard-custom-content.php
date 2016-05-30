@@ -107,7 +107,7 @@ register_via_taxonomy_core(
 		'gb-plugins',
 		'gb-features',
 		'gb-documentation',
-		'gb-tutorials'
+		'gb-tutorials',
 		'post'
 	)
 );
