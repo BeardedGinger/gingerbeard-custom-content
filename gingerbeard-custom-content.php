@@ -31,7 +31,7 @@ register_via_cpt_core(
 		'publicly_queryable' 	=> true,
 		'rewrite' 			=> array( 'slug' => 'plugins' ),
 		'hierarchical' 			=> true,
-		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes' )
+		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes', 'excerpt' )
 	)
 );
 
@@ -80,6 +80,21 @@ register_via_cpt_core(
 	)
 );
 
+// Register Tutorials CPT
+register_via_cpt_core(
+	array(
+		'Tutorial',
+		'Tutorials',
+		'gb-tutorials'
+	),
+	array(
+		'menu_icon' 			=> 'dashicons-welcome-learn-more',
+		'publicly_queryable' 	=> true,
+		'rewrite' 				=> array( 'slug' => 'tutorial' ),
+		'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions' )
+	)
+);
+
 // Plugins Taxonomy
 register_via_taxonomy_core(
 	array(
@@ -92,6 +107,7 @@ register_via_taxonomy_core(
 		'gb-plugins',
 		'gb-features',
 		'gb-documentation',
+		'gb-tutorials'
 		'post'
 	)
 );
